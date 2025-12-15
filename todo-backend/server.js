@@ -8,10 +8,11 @@ app.use(express.json());
 app.use(cors());
 
 //start the server
-const port = 8080;
-app.listen(port, () => {
-  console.log("Server is listening the port" + port);
+const port = process.env.PORT || 8080;
+app.listen(port, '0.0.0.0', () => {
+  console.log("Server is listening on port " + port);
 });
+
 
 //connecting mongoDb
 mongoose
