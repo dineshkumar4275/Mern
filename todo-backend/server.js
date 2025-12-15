@@ -15,7 +15,7 @@ app.listen(port, () => {
 
 //connecting mongoDb
 mongoose
-  .connect("mongodb://localhost:27017/ToDoApp")
+  .connect("mongodb+srv://dineshkumar4275:2Kcandy427585@mongo-tutorial.nlajwc6.mongodb.net/?appName=mongo-tutorial")
   .then(() => console.log("DB Conntected"))
   .catch((e) => console.log(e));
 
